@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашняя работа 3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="articles.html">Статьи</a></li>
+				<li><a href="form.html">Регистрация</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+	<form action="#" method="post" class="form">
+		<fieldset>
+			<legend> Регистрация</legend>
+			<br>
+
+			<label for="email">Адрес электронной почты:</label>
+			<input required type="email" id="email">
+			<br>
+
+			<span>Мы вышлем на него подтверждение заказа</span>
+			<br>
+
+			<label for="firstname">Имя:</label>
+			<input required type="firstname" id="firstname">
+			<br>
+
+			<label for="lastname">Фамилия:</label>
+			<input required type="lastname" id="lastname">
+			<br>
+
+			<label for="password">Пароль:</label>
+			<input required type="password" id="pwd" minlength="10" maxlength="20">
+			<br>
+			<span>Должно быть не меньше 10 символов и не больше 20</span>
+			<br>
+
+			<label for="date">Дата рождения:</label>
+            <input required type="number" min="1" max="31" step="1">
+
+            <label for="date">Месяц рождения:</label>
+            <input required type="number" min="1" max="12" step="1">
+
+            <label for="date">Год рождения:</label>
+            <input required type="number" min="1940" step="1">
+
+			<p>Пол:</p>
+			<label><input name="answer" type="radio">Женский</label>
+        	<label><input name="answer" type="radio">Мужской</label>
+        	<br>
+
+        	<p>Средства связи</p>
+        	<span>О чем я хочу получать рассылку по элетронной почте:</span>
+        	<br>
+        	<label><input type="checkbox" name="answer1[]">Скидки</label>
+        	<br>
+        	<label><input type="checkbox" name="answer2[]">Новинки</label>
+        	<br>
+        	<label><input type="checkbox" name="answer3[]">Новости</label>
+        	<br>
+
+        	<p>Создавая личный кабинет, вы соглашаетесь с нашими<a href="#">Условиями использования</a> и <a href="#">Политикой Конфиденциальности</a></p>
+			<br>
+
+			<button class="form-button" type="submit">Отправить данные формы</button>
+
+		</fieldset>
+	</form>
+
+	</main>
+	
+</body>
+</html>

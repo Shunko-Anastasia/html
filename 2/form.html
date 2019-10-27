@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shu-Форма</title>
+</head>
+
+<body>
+
+	<form action="#" method="post">
+		<fieldset>
+			<legend> Зарегистрироваться, указав адрес электронной почты
+			</legend>
+			<br>
+
+			<label for="email">Адрес электронной почты:</label>
+			<input required type="email" id="email">
+			<br>
+
+			<span>Мы вышлем на него подтверждение заказа</span>
+			<br>
+
+			<label for="firstname">Имя:</label>
+			<input required type="text" id="firstname">
+			<br>
+
+			<label for="lastname">Фамилия:</label>
+			<input required type="text" id="lastname">
+			<br>
+
+			<label for="password">Пароль:</label>
+			<input required type="password" id="passwor" minlength="10" maxlength="20">
+			<br>
+			<span>Должно быть не меньше 10 символов и не больше 20</span>
+			<br>
+
+			<label for="date">Дата рождения:</label>
+            <input required type="number" min="1" max="31" step="1" id="date">
+
+            <label for="date">Месяц рождения:</label>
+            <input required type="number" min="1" max="12" step="1" id="date">
+
+            <label for="date">Год рождения:</label>
+            <input required type="number" min="1940" step="1" id="date">
+
+			<p>Пол:</p>
+			<label><input name="answer" type="radio" id="answer">Женский</label>
+        	<label><input name="answer" type="radio" id="answer">Мужской</label>
+        	<br>
+
+        	<p>Средства связи</p>
+        	<span>О чем я хочу получать рассылку по элетронной почте:</span>
+        	<br>
+        	<label><input type="checkbox" name="answer1[]">Скидки</label>
+        	<br>
+        	<label><input type="checkbox" name="answer2[]">Новинки</label>
+        	<br>
+        	<label><input type="checkbox" name="answer3[]">Новости</label>
+        	<br>
+
+        	<p>Создавая личный кабинет, вы соглашаетесь с нашими<a href="#">Условиями использования</a> и <a href="#">Политикой Конфиденциальности</a></p>
+			<br>
+
+			<button type="submit">Отправить данные формы</button>
+
+		</fieldset>
+	</form>
+
+	
+</body>
+</html>
